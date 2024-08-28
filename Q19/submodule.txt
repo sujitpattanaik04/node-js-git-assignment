@@ -1,0 +1,57 @@
+*GIT SUBMODULES
+->  Git submodules are used to make a Git repository as a subdirectory of another Git repository.
+->  The submodule is tracked via a special file .gitmodules.
+
+// 1. Initialize a Parent Repository
+Command:
+    mkdir main - project
+    cd main-project
+    git init
+
+// 2. Add a Submodule
+Command:
+    git submodule add https://github.com/user_name/submodule_name.git
+
+// 3. Commit the Submodule
+Command:
+    git add .gitmodules submodule_name
+    git commit -m "submodule_name added"
+
+// 4. Clone a Repository with Submodule
+Command:
+    git clone https://github.com/user_name/main-project.git
+    cd main-project
+    git submodule init
+    git submodule update
+
+// 5. Updating a Submodule
+Command:
+    cd submodule_name
+    git pull origin main
+    cd ..
+    git add submodule_name
+    git commit -m "submodule_name updated"
+
+// 6. Removing a Submodule
+Command:
+    git submodule deinit -f submodule_name
+    git rm -f submodule_name
+    git commit -m "submodule_name deleted"
+    rm -rf .git/modules/submodule_name
+
+*USE CASES OF GIT SUBMODULES
+->  Shared Libraries:
+        When multiple projects need to share a common library,
+        using a submodule ensures all projects stay in sync with the latest changes in that library.
+->  Third - Party Dependencies:
+        For projects that rely on third - party libraries,
+        submodules allow you to include these libraries while keeping them separate from your main project codebase.
+->  Modular Development:
+        In large - scale projects,
+        breaking down the project into modules and using submodules for each can help in maintaining code modularity and manageability.
+->  Forking and Contributing:
+        When contributing to open - source projects,
+        using submodules allows you to include your forked version of the library without directly modifying the main repository's codebase.
+->  Plugin Systems:
+        For projects with a plugin architecture,
+        each plugin can be maintained as a separate repository and included in the main project using submodules.
