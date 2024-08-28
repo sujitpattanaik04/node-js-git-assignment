@@ -1,0 +1,21 @@
+*  `git reflog` or `git log --all` is a powerful tool that tracks every action performed in your repository,
+    including branch deletions and checkouts.You can use it to find the commit hash of the deleted branch.
+
+STEPS:
+
+A. Identify the Lost Commits
+        1. git log--all
+
+B.Recover the Deleted Branch
+
+    -> Restore the Entire Branch
+        1. git checkout -b <new-branch_name> <commit-hash>
+
+    -> Cherry-pick Specific Commits</commit-hash>
+        1. git checkout main
+        2. git cherry-pick <commit-hash>
+
+C. Push the Changes
+        1. git push origin <new-branch_name>
+        2. git push origin feature-branch
+

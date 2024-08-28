@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Inception",
+        "duration": 148,
+        "ratings": 8.8,
+        "totalReviews": 12000,
+        "releaseYear": 2010,
+        "genre": [
+            "Action",
+            "Sci-Fi",
+            "Thriller"
+        ],
+        "director": "Christopher Nolan",
+        "coverImage": "http://example.com/inception.jpg"
+    },
+    {
+        "name": "The Dark Knight",
+        "duration": 152,
+        "ratings": 9,
+        "totalReviews": 15000,
+        "releaseYear": 2008,
+        "genre": [
+            "Action",
+            "Crime",
+            "Drama"
+        ],
+        "director": "Christopher Nolan",
+        "coverImage": "http://example.com/thedarkknight.jpg"
+    },
+    {
+        "name": "Interstellar",
+        "duration": 169,
+        "ratings": 8.6,
+        "totalReviews": 11000,
+        "releaseYear": 2014,
+        "genre": [
+            "Adventure",
+            "Drama",
+            "Sci-Fi"
+        ],
+        "director": "Christopher Nolan",
+        "coverImage": "http://example.com/interstellar.jpg"
+    }
+]

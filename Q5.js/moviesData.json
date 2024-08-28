@@ -1,0 +1,142 @@
+[
+    {
+        "name": "Inception",
+        "actor": "Leonardo DiCaprio",
+        "duration": 148,
+        "ratings": 8.8,
+        "director": "Christopher Nolan"
+    },
+    {
+        "name": "The Shawshank Redemption",
+        "actor": "Tim Robbins",
+        "duration": 142,
+        "ratings": 9.3,
+        "director": "Frank Darabont"
+    },
+    {
+        "name": "The Godfather",
+        "actor": "Marlon Brando",
+        "duration": 175,
+        "ratings": 9.2,
+        "director": "Francis Ford Coppola"
+    },
+    {
+        "name": "The Dark Knight",
+        "actor": "Christian Bale",
+        "duration": 152,
+        "ratings": 9.0,
+        "director": "Christopher Nolan"
+    },
+    {
+        "name": "Pulp Fiction",
+        "actor": "John Travolta",
+        "duration": 154,
+        "ratings": 8.9,
+        "director": "Quentin Tarantino"
+    },
+    {
+        "name": "Fight Club",
+        "actor": "Brad Pitt",
+        "duration": 139,
+        "ratings": 8.8,
+        "director": "David Fincher"
+    },
+    {
+        "name": "Forrest Gump",
+        "actor": "Tom Hanks",
+        "duration": 142,
+        "ratings": 8.8,
+        "director": "Robert Zemeckis"
+    },
+    {
+        "name": "The Matrix",
+        "actor": "Keanu Reeves",
+        "duration": 136,
+        "ratings": 8.7,
+        "director": "Lana Wachowski, Lilly Wachowski"
+    },
+    {
+        "name": "The Lord of the Rings: The Return of the King",
+        "actor": "Elijah Wood",
+        "duration": 201,
+        "ratings": 9.0,
+        "director": "Peter Jackson"
+    },
+    {
+        "name": "Star Wars: Episode V - The Empire Strikes Back",
+        "actor": "Mark Hamill",
+        "duration": 124,
+        "ratings": 8.7,
+        "director": "Irvin Kershner"
+    },
+    {
+        "name": "Gladiator",
+        "actor": "Russell Crowe",
+        "duration": 155,
+        "ratings": 8.5,
+        "director": "Ridley Scott"
+    },
+    {
+        "name": "The Silence of the Lambs",
+        "actor": "Jodie Foster",
+        "duration": 118,
+        "ratings": 8.6,
+        "director": "Jonathan Demme"
+    },
+    {
+        "name": "Saving Private Ryan",
+        "actor": "Tom Hanks",
+        "duration": 169,
+        "ratings": 8.6,
+        "director": "Steven Spielberg"
+    },
+    {
+        "name": "Schindler's List",
+        "actor": "Liam Neeson",
+        "duration": 195,
+        "ratings": 9.0,
+        "director": "Steven Spielberg"
+    },
+    {
+        "name": "Interstellar",
+        "actor": "Matthew McConaughey",
+        "duration": 169,
+        "ratings": 8.6,
+        "director": "Christopher Nolan"
+    },
+    {
+        "name": "The Green Mile",
+        "actor": "Tom Hanks",
+        "duration": 189,
+        "ratings": 8.6,
+        "director": "Frank Darabont"
+    },
+    {
+        "name": "The Prestige",
+        "actor": "Hugh Jackman",
+        "duration": 130,
+        "ratings": 8.5,
+        "director": "Christopher Nolan"
+    },
+    {
+        "name": "Memento",
+        "actor": "Guy Pearce",
+        "duration": 113,
+        "ratings": 8.4,
+        "director": "Christopher Nolan"
+    },
+    {
+        "name": "The Lion King",
+        "actor": "Matthew Broderick",
+        "duration": 88,
+        "ratings": 8.5,
+        "director": "Roger Allers, Rob Minkoff"
+    },
+    {
+        "name": "Django Unchained",
+        "actor": "Jamie Foxx",
+        "duration": 165,
+        "ratings": 8.4,
+        "director": "Quentin Tarantino"
+    }
+]

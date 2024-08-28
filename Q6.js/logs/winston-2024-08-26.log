@@ -1,0 +1,12 @@
+2024-08-26 05:15:51 -> info : {"method":"GET","url":"/logger","status":"304","responseTime":"2.709"}
+2024-08-26 05:16:21 -> info : {"method":"GET","url":"/logger","status":"304","responseTime":"1.821"}
+2024-08-26 05:16:29 -> info : {"method":"GET","url":"/logger","status":"304","responseTime":"0.882"}
+2024-08-26 05:16:30 -> info : {"method":"GET","url":"/logger","status":"304","responseTime":"0.999"}
+2024-08-26 05:16:30 -> info : {"method":"GET","url":"/logger","status":"304","responseTime":"0.313"}
+2024-08-26 05:16:30 -> info : {"method":"GET","url":"/logger","status":"304","responseTime":"1.460"}
+2024-08-26 05:16:37 -> info : {"method":"GET","url":"/logger","status":"304","responseTime":"1.463"}
+2024-08-26 05:16:37 -> info : {"method":"GET","url":"/logger","status":"304","responseTime":"0.650"}
+2024-08-26 05:16:37 -> info : {"method":"GET","url":"/logger","status":"304","responseTime":"4.055"}
+2024-08-26 05:16:38 -> info : {"method":"GET","url":"/logger","status":"304","responseTime":"0.423"}
+2024-08-26 05:16:38 -> info : {"method":"GET","url":"/logger","status":"304","responseTime":"0.292"}
+2024-08-26 05:16:38 -> info : {"method":"GET","url":"/logger","status":"304","responseTime":"1.195"}

@@ -1,0 +1,102 @@
+[
+    {
+        "name": "John Doe",
+        "email": "johndoe@gmail.com",
+        "password": "password123"
+    },
+    {
+        "name": "Jane Smith",
+        "email": "janesmith@gmail.com",
+        "password": "securePass456"
+    },
+    {
+        "name": "Michael Johnson",
+        "email": "michael.johnson@gmail.com",
+        "password": "mikePass789"
+    },
+    {
+        "name": "Emily Davis",
+        "email": "emily.davis@gmail.com",
+        "password": "emilySecure456"
+    },
+    {
+        "name": "Robert Brown",
+        "email": "robert.brown@gmail.com",
+        "password": "robertPass123"
+    },
+    {
+        "name": "Linda Williams",
+        "email": "linda.williams@gmail.com",
+        "password": "lindaSecure789"
+    },
+    {
+        "name": "William Jones",
+        "email": "william.jones@gmail.com",
+        "password": "willPass456"
+    },
+    {
+        "name": "Elizabeth Garcia",
+        "email": "elizabeth.garcia@gmail.com",
+        "password": "elizSecure123"
+    },
+    {
+        "name": "James Martinez",
+        "email": "james.martinez@gmail.com",
+        "password": "jamesPass789"
+    },
+    {
+        "name": "Patricia Rodriguez",
+        "email": "patricia.rodriguez@gmail.com",
+        "password": "patriciaSecure456"
+    },
+    {
+        "name": "Charles Wilson",
+        "email": "charles.wilson@gmail.com",
+        "password": "charlesPass123"
+    },
+    {
+        "name": "Jennifer Anderson",
+        "email": "jennifer.anderson@gmail.com",
+        "password": "jennSecure789"
+    },
+    {
+        "name": "David Thomas",
+        "email": "david.thomas@gmail.com",
+        "password": "davidPass456"
+    },
+    {
+        "name": "Susan Taylor",
+        "email": "susan.taylor@gmail.com",
+        "password": "susanSecure123"
+    },
+    {
+        "name": "Christopher Moore",
+        "email": "christopher.moore@gmail.com",
+        "password": "chrisPass789"
+    },
+    {
+        "name": "Jessica Lee",
+        "email": "jessica.lee@gmail.com",
+        "password": "jessSecure456"
+    },
+    {
+        "name": "Daniel White",
+        "email": "daniel.white@gmail.com",
+        "password": "danielPass123"
+    },
+    {
+        "name": "Barbara Harris",
+        "email": "barbara.harris@gmail.com",
+        "password": "barbaraSecure789"
+    },
+    {
+        "name": "Matthew Clark",
+        "email": "matthew.clark@gmail.com",
+        "password": "mattPass456"
+    },
+    {
+        "name": "Nancy Lewis",
+        "email": "nancy.lewis@gmail.com",
+        "password": "nancySecure123"
+    }
+]

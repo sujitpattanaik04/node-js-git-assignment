@@ -1,0 +1,81 @@
+// 1. FAST-FORWARD MERGE
+
+The branch pointer is simply moved forward to the latest commit in the feature branch.No new merge commit is created.
+    
+Command:
+git checkout master
+git merge feature
+
+Visual_Representation:
+Before:
+    A---B---C (master)
+            \
+             D---E (feature)
+
+After:
+    A---B---C---D---E (master)
+                     (feature)
+
+
+
+// 2. RECURSIVE MERGE or 3-WAY MERGE
+
+When Both the master and feature branches have diverged since they branched off from a common ancestor. 
+Then Git performs a three - way merge using the common ancestor and creates a new merge commit on the master branch.
+
+Command:
+git checkout master
+git merge feature
+
+Visual_Representation:
+Before:
+    A---B---C (master)
+       \   \
+        D---E---F (feature)
+
+After:
+    A---B---C---G (master)
+       \   \  /
+        D---E---F (feature)
+
+
+// 3. SQUASH MERGE
+
+Here Git combines all the commits in the feature branch into a single commit on the master branch.
+
+Command:
+git checkout master
+git merge --squash feature
+git commit -m "Squashed feature branch"
+
+Visual_Representation:
+Before:
+    A---B---C (master)
+            \
+             D---E---F (feature)
+
+After:
+    A---B---C---G (master)
+                 (feature)
+
+
+// 4. REBASE MERGE
+
+Git replays the commits from the feature branch onto the master branch,
+by changing the base of the feature branch to the latest commit on the master branch.
+
+Command:
+git checkout feature
+git rebase master
+git checkout master
+git merge feature
+
+
+Visual_Representation:
+Before:
+    A---B---C (master)
+       \
+        D---E---F (feature)
+
+After:
+    A---B---C---D'---E'---F' (master)
