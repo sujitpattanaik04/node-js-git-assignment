@@ -26,7 +26,7 @@ const logger = winston.createLogger({
       datePattern: "YYYY-MM-DD",
       zippedArchive: true,
       maxSize: "20m",
-      maxFiles: "15d",
+      maxFiles: "14d",
     }),
   ],
 });
