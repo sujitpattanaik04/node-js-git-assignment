@@ -21,9 +21,9 @@ app.use(express.json());
 // });
 
 app.get("/", (req, res) => {
-  const stream = fs.createReadStream("./sample.txt", "utf-8");
-  stream.on("data", (chunk) => res.write(chunk));
-  stream.on("end", () => res.end());
+  const readStream = fs.createReadStream("./sample.txt");
+  readStream.on("data", (chunk) => res.write(chunk));
+  readStream.on("end", () => res.end());
 });
 
 // app.get("/", (req, res) => {

@@ -1,7 +1,6 @@
 // 1. Type Coercion Oddities
 console.log([] + []); // ""
 console.log([] + {}); // "[object Object]"
-console.log({} + []); // 0
 console.log(2 + "2"); // "22" (number + string)
 console.log(2 - "2"); // 0 (number - string)
 console.log("2" - 1); // 1 (string - number)
@@ -40,11 +39,11 @@ console.log(0 == ""); // true
 console.log(0.1 + 0.2); // 0.30000000000000004
 console.log(0.1 + 0.2 === 0.3); // false
 
-// 7. Functions Hoisting
-hoistedFunction(); // "This function is hoisted"
+// 7. Functions Declaration Hoisting
+hoistedFunction(); // "function declaration is hoisted"
 
 function hoistedFunction() {
-  console.log("This function is hoisted");
+  console.log("function declaration is hoisted");
 }
 
 console.log(hoistedVar); // undefined

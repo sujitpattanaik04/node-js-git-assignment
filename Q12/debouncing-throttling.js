@@ -13,7 +13,7 @@ const updateThrottleText = throttle((text) => {
 
 input.addEventListener("input", (e) => {
   defaultText.textContent = e.target.value;
-  console.log(e.target.value);
+  // console.log(e.target.value);
   updateDebounceText(e.target.value);
   updateThrottleText(e.target.value);
 });
@@ -32,16 +32,6 @@ function throttle(cb, delay = 1000) {
   let wait = false;
   let waitingArgs;
 
-  const timeoutFunc = () => {
-    if (waitingArgs) {
-      cb(waitingArgs);
-      waitingArgs = null;
-      timeoutFunc();
-    } else {
-      wait = false;
-    }
-  };
-
   return (args) => {
     if (wait) {
       waitingArgs = args;
@@ -51,7 +41,13 @@ function throttle(cb, delay = 1000) {
     cb(args);
     wait = true;
 
-    setTimeout(timeoutFunc, delay);
+    setTimeout(() => {
+      wait = false;
+      if (waitingArgs) {
+        cb(waitingArgs);
+        waitingArgs = null;
+      }
+    }, delay);
   };
 }
 

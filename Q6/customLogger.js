@@ -4,7 +4,9 @@ const { combine, timestamp, printf, json, prettyPrint, errors, cli } =
 const DailyRotateFile = require("winston-daily-rotate-file");
 const morgan = require("morgan");
 const express = require("express");
+
 const app = express();
+
 const logger = winston.createLogger({
   level: "info",
   //   format: winston.format.cli(),
@@ -30,6 +32,7 @@ const logger = winston.createLogger({
     }),
   ],
 });
+
 const customFormat =
   ":method :url :status :res[content-length] - :response-time ms";
 app.use(
@@ -48,10 +51,13 @@ app.use(
     },
   })
 );
+
 app.get("/logger", (req, res) => {
   res.send("He;lo");
 });
+
 const port = 3000;
+
 // CREATE SERVER
 app.listen(port, () => {
   console.log("Server is started...");

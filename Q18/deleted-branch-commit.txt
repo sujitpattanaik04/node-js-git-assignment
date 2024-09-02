@@ -4,18 +4,17 @@
 STEPS:
 
 A. Identify the Lost Commits
-        1. git log--all
+        1. git reflog
 
-B.Recover the Deleted Branch
+B.Recover the Deleted Branch or Specific Commit
 
     -> Restore the Entire Branch
-        1. git checkout -b <new-branch_name> <commit-hash>
+        1. git checkout -b <new-branch-name> <deleted-branch-commit-hash>
 
-    -> Cherry-pick Specific Commits</commit-hash>
-        1. git checkout main
+    ->  Restore a Specific Commit using Cherry-pick
+        1. git checkout -b <new-branch-name>
         2. git cherry-pick <commit-hash>
 
 C. Push the Changes
-        1. git push origin <new-branch_name>
-        2. git push origin feature-branch
+        1. git push origin <new-branch-name>
 

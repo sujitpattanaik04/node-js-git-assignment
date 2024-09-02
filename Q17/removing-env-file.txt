@@ -31,7 +31,7 @@
 
             git filter - repo--path.env--invert - paths
             
-        3. Force-push the rewritten history to the remote reConfirming the File is No Longer Accessible on GitHubpository:
+        3. Force-push the rewritten history to the remote reConfirming the File is No Longer Accessible on GitHub repository:
         
             git push origin --force --all
 

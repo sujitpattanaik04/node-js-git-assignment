@@ -1,8 +1,12 @@
 const jwt = require("jsonwebtoken");
 const Users = require("./userModel");
+const util = require("util");
 const express = require("express");
+
 const app = express();
+
 app.use(express.json());
+
 const signToken = (id) => {
   return jwt.sign({ id }, "what04-can13-they49-do299", {
     expiresIn: 1000,
@@ -18,6 +22,7 @@ const sendResponse = (user, statusCode, req, res) => {
     },
   });
 };
+
 app.post("/signup", async (req, res) => {
   try {
     const newUser = await Users.create(req.body);
@@ -67,7 +72,6 @@ app.post("/authenticate", async (req, res, next) => {
     );
   }
   // Allow user to access route
-  req.user = user;
   next();
 });
 const port = 3000;
