@@ -4,40 +4,34 @@
     B. Permanently remove the file from the entire Git history to ensure it is not accessible even from old commits.
 
         
-        
-    A. Removing the .env File from the Latest Commit
-        1. Remove the.env file from the working directory and index:
-
-            git rm--cached.env
-    
-        2. Add the .env file to .gitignore to prevent it from being committed again:
+    A. Adding the .env file to .gitignore to prevent it from being committed again:
     
             echo ".env" >> .gitignore
             git add .gitignore
             git commit -m "Remove .env and add it to .gitignore"
 
-        3. Push the changes to the remote repository:
+
+
+    B. Removing the .env File from the Latest Commit
+        1. Remove the.env file from the working directory and index:
+
+            git rm--cached.env
+
+        2. Push the changes to the remote repository:
         
             git push origin main
 
 
 
+    C. Removing the .env File from All Old Commits
+           
+        1. Remove the .env file from all commits:
 
-    B. Removing the .env File from All Old Commits
-   
-        1. Install git filter-repo:
-        
-        2. Remove the .env file from all commits:
-
-            git filter - repo--path.env--invert - paths
+            git filter-branch --index-filter "git rm -rf --cached --ignore-unmatch .env" HEAD
             
-        3. Force-push the rewritten history to the remote reConfirming the File is No Longer Accessible on GitHub repository:
+        2. Force-push the rewritten history to the remote reConfirming the File is No Longer Accessible on GitHub repository:
         
             git push origin --force --all
-
-        4. Instruct all collaborators to re-clone the repository:
-        
-            git clone[your - repo - url]
             
 
 
